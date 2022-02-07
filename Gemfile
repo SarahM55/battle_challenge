@@ -10,4 +10,5 @@ group :development, :test do
   gem "rspec"
   gem "sinatra"
   gem "webrick"
+  gem "sinatra-contrib"
 end  

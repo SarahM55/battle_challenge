@@ -1,6 +1,14 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
+require 'sinatra/reloader' if development?
 
 get '/' do
   "Hello!"
-end    
+end  
+
+get '/secret' do
+  "This is a top secret message"    
+end  
+
+get '/test' do
+  "This is a top test for the top team"    
+end   
