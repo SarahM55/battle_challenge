@@ -13,6 +13,13 @@ get '/test' do
   "This is a top test for the top team"    
 end  
 
-get '/cat' do
+get '/random-cat' do
+  @name = ["Amigo", "Misty", "Almond"].sample
   erb(:index)
 end  
+
+get '/named-cat' do
+  print params
+  @name = params[:name]
+  erb(:index)
+end
